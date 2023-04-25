@@ -9,8 +9,17 @@ public class TestCamMove : MonoBehaviour
     [SerializeField] private float speed = 2f;
     [SerializeField] private float time = 2f;
     private float timer;
-    
+    //private Camera camera;
 
+    [SerializeField] private GameObject next;
+    [SerializeField] private GameObject back;
+
+    void Start()
+    {
+        //camera = Camera.main;
+        //next = GameObject.Find("Next");
+        //back = GameObject.Find("Back");
+    }
 
     void Update()
     {
@@ -22,32 +31,71 @@ public class TestCamMove : MonoBehaviour
             timer = 999;
         }
 
-        if (Input.mousePosition.x > Screen.width / 2f)
+        if (timer >= time)
         {
-            if (timer >= time)
+            DetectObjectWithRaycast();
+            next.SetActive(true);
+            back.SetActive(true);
+        }
+
+        //if (Input.mousePosition.x > Screen.width / 2f)
+        //{
+        //    if (timer >= time)
+        //    {
+        //        if (Input.GetMouseButtonDown(0))
+        //        {
+        //            NextRoom();
+        //            Debug.Log("Next " + currentRoomIndex);
+        //            timer = 0;
+        //        }
+        //    }
+        //}
+        //else
+        //{
+        //    if (timer >= time)
+        //    {
+        //        if (Input.GetMouseButtonDown(0))
+        //        {
+        //            PreviousRoom();
+        //            Debug.Log("Back " + currentRoomIndex);
+        //            timer = 0;
+        //        }
+        //    }
+        //}
+    }
+
+    public void DetectObjectWithRaycast()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Vector2 worldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            RaycastHit2D hit = Physics2D.Raycast(worldPoint, Vector2.zero);
+            int layerMask = LayerMask.GetMask("UI");
+            Collider2D target = Physics2D.OverlapPoint(worldPoint, layerMask);
+
+            if (target)
             {
-                if (Input.GetMouseButtonDown(0))
+
+                Debug.Log($"{hit.collider.name} Detected",
+                    hit.collider.gameObject);
+                if (hit.collider.name == "Next")
                 {
                     NextRoom();
-                    Debug.Log("Next " + currentRoomIndex);
                     timer = 0;
+                    next.SetActive(false);
+                    back.SetActive(false);
                 }
-            }
-        }
-        else
-        {
-            if (timer >= time)
-            {
-                if (Input.GetMouseButtonDown(0))
+                if (hit.collider.name == "Back")
                 {
                     PreviousRoom();
-                    Debug.Log("Back " + currentRoomIndex);
                     timer = 0;
+                    next.SetActive(false);
+                    back.SetActive(false);
                 }
+
             }
         }
     }
-
 
     public void NextRoom()
     {
