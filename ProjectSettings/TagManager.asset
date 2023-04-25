@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - eleTwo
+  - eleOne
+  - headOne
+  - spawner
+  - mirror
+  - Quad1
+  - Quad2
+  - Heart
+  - Star
+  - Oval
+  - Square
+  - Triangle
+  - Octogon
+  - Circle
+  - Rhombus
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - BG
+  - Water
+  - UI
+  - Characters
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: BG
+    uniqueID: 2608334477
+    locked: 0
+  - name: BG Screen
+    uniqueID: 1970573457
+    locked: 0
+  - name: UI
+    uniqueID: 3608954093
+    locked: 0
+  - name: Characters
+    uniqueID: 2079375207
+    locked: 0
