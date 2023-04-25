@@ -7,6 +7,11 @@ public class InstantiatePrefabs : MonoBehaviour
     public GameObject[] prefabs;
     public Transform[] locations;
 
+    private GameObject firstObjectClicked; // Hold reference to first clicked object
+    private GameObject secondObjectClicked; // Hold reference to second clicked object
+
+    public string checkTag; //container for tag to check
+
     void Start()
     {
         // Shuffle the locations array to randomize the order
@@ -24,7 +29,40 @@ public class InstantiatePrefabs : MonoBehaviour
             System.Array.Resize(ref locations, locations.Length - 1);
         }
     }
+    void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Vector2 worldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            RaycastHit2D hit = Physics2D.Raycast(worldPoint, Vector2.zero);
+            int layerMask = LayerMask.GetMask("Characters");
+            Collider2D target = Physics2D.OverlapPoint(worldPoint, layerMask);
 
+            if (target)
+            {
+                checkTag = hit.collider.gameObject.tag;
+                Debug.Log(checkTag);
+
+                if (firstObjectClicked == null)
+                {
+                    firstObjectClicked = hit.collider.gameObject;
+                }
+                else
+                {
+                    secondObjectClicked = hit.collider.gameObject;
+
+                    if (firstObjectClicked.CompareTag(checkTag))
+                    {
+                        firstObjectClicked.SetActive(false);
+                        secondObjectClicked.SetActive(false);
+                    }
+
+                    firstObjectClicked = null;
+                    secondObjectClicked = null;
+                }
+            }
+        }
+    }
     // Shuffle the elements of an array using the Fisher-Yates algorithm
     void Shuffle<T>(T[] array)
     {
