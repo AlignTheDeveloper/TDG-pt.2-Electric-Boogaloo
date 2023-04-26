@@ -13,7 +13,7 @@ public class CheckMatches : MonoBehaviour
 
     private void Start()
     {
-
+        counter ++;
     }
 
     private void Update()
