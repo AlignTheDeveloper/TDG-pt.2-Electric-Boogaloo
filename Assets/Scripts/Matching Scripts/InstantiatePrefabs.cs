@@ -11,6 +11,7 @@ public class InstantiatePrefabs : MonoBehaviour
     private GameObject secondObjectClicked; // Hold reference to second clicked object
 
     public string checkTag; //container for tag to check
+    public int score;
 
     void Start()
     {
@@ -27,6 +28,7 @@ public class InstantiatePrefabs : MonoBehaviour
             locations[index] = locations[locations.Length - 1];
             locations[locations.Length - 1] = null;
             System.Array.Resize(ref locations, locations.Length - 1);
+            score = 0;
         }
     }
     void Update()
@@ -55,6 +57,7 @@ public class InstantiatePrefabs : MonoBehaviour
                     {
                         firstObjectClicked.SetActive(false);
                         secondObjectClicked.SetActive(false);
+                        score++;
                     }
 
                     firstObjectClicked = null;

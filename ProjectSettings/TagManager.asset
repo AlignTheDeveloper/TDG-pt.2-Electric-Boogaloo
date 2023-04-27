@@ -20,6 +20,7 @@ TagManager:
   - Circle
   - Rhombus
   - buttons
+  - Corner
   layers:
   - Default
   - TransparentFX
@@ -28,7 +29,7 @@ TagManager:
   - Water
   - UI
   - Characters
-  - 
+  - GameEnd
   - 
   - 
   - 
