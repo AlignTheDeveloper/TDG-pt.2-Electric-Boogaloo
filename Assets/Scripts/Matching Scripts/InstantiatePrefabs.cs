@@ -6,12 +6,9 @@ public class InstantiatePrefabs : MonoBehaviour
 {
     public GameObject[] prefabs;
     public Transform[] locations;
-    public GameObject[] cards;
 
     public GameObject galaxy;
     private GameEnd ge;
-    private GameObject card1;
-    private GameObject card2;
 
     private GameObject firstObjectClicked; // Hold reference to first clicked object
     private GameObject secondObjectClicked; // Hold reference to second clicked object
@@ -22,7 +19,6 @@ public class InstantiatePrefabs : MonoBehaviour
     void Start()
     {
         ge = galaxy.GetComponent<GameEnd>();
-        cards = GameObject.FindGameObjectsWithTag("Card");
         // Shuffle the locations array to randomize the order
         Shuffle(locations);
 
@@ -52,19 +48,14 @@ public class InstantiatePrefabs : MonoBehaviour
             {
                 checkTag = hit.collider.gameObject.tag;
                 Debug.Log(checkTag);
-                
 
                 if (firstObjectClicked == null)
                 {
                     firstObjectClicked = hit.collider.gameObject;
-                    GameObject card1 = firstObjectClicked.transform.GetChild(1).gameObject;
-                    card1.SetActive(false);
                 }
                 else
                 {
                     secondObjectClicked = hit.collider.gameObject;
-                    GameObject card2 = secondObjectClicked.transform.GetChild(1).gameObject;
-                    card2.SetActive(false);
 
                     if (firstObjectClicked.CompareTag(checkTag))
                     {
