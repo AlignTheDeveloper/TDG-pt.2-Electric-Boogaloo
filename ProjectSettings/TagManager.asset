@@ -20,6 +20,10 @@ TagManager:
   - Circle
   - Rhombus
   - buttons
+  - leftPoint
+  - rightPoint
+  - leftPointT
+  - rightPointT
   layers:
   - Default
   - TransparentFX
