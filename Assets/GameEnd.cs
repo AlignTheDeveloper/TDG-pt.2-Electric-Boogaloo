@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class GameEnd : MonoBehaviour
 {
-     public InstantiatePrefabs gameManager;
+     //public InstantiatePrefabs gameManager;
      bool isScaling = false;
      Vector3 maxScale;
+     //public GameObject galaxy;
 
     // Start is called before the first frame update
     void Start()
     {
-        gameManager = FindObjectOfType<InstantiatePrefabs>();
+        //gameManager = FindObjectOfType<InstantiatePrefabs>();
         gameObject.SetActive(false);
         maxScale = new Vector3(5,5,5);
     }
@@ -19,12 +20,21 @@ public class GameEnd : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(gameManager.score == 9)
+        /* if(gameManager.score == 9)
         {
             gameObject.SetActive(true);
             scaleOverTime(gameObject.transform, maxScale, 2);
-        }
+        } */
 
+        
+
+    }
+
+    public void test()
+    {
+        Debug.Log("test running");
+        gameObject.SetActive(true);
+        StartCoroutine(scaleOverTime(gameObject.transform, maxScale, 2));
     }
     
 

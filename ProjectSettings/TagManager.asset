@@ -67,6 +67,9 @@ TagManager:
   - name: Characters
     uniqueID: 2079375207
     locked: 0
+  - name: Card
+    uniqueID: 3152021301
+    locked: 0
   - name: UI
     uniqueID: 3608954093
     locked: 0
