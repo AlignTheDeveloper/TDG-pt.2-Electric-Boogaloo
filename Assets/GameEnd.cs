@@ -1,18 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameEnd : MonoBehaviour
 {
-     //public InstantiatePrefabs gameManager;
-     bool isScaling = false;
-     Vector3 maxScale;
+    //public InstantiatePrefabs gameManager;
+    bool isScaling = false;
+    Vector3 maxScale;
+
+    public GameObject button;
      //public GameObject galaxy;
 
     // Start is called before the first frame update
     void Start()
     {
         //gameManager = FindObjectOfType<InstantiatePrefabs>();
+        button.SetActive(false);
         gameObject.SetActive(false);
         maxScale = new Vector3(5,5,5);
     }
@@ -35,8 +39,8 @@ public class GameEnd : MonoBehaviour
         Debug.Log("test running");
         gameObject.SetActive(true);
         StartCoroutine(scaleOverTime(gameObject.transform, maxScale, 2));
-    }
-    
+        button.SetActive(true);
+    }  
 
     IEnumerator scaleOverTime(Transform objectToScale, Vector3 toScale, float duration)
     {
