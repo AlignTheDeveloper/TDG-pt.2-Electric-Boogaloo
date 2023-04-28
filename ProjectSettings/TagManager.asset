@@ -20,6 +20,11 @@ TagManager:
   - Circle
   - Rhombus
   - buttons
+  - Corner
+  - leftPoint
+  - rightPoint
+  - rightPointT
+  - leftPointT
   layers:
   - Default
   - TransparentFX
@@ -28,7 +33,7 @@ TagManager:
   - Water
   - UI
   - Characters
-  - 
+  - GameEnd
   - 
   - 
   - 
@@ -65,6 +70,9 @@ TagManager:
     locked: 0
   - name: Characters
     uniqueID: 2079375207
+    locked: 0
+  - name: Card
+    uniqueID: 3152021301
     locked: 0
   - name: UI
     uniqueID: 3608954093

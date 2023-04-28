@@ -5,6 +5,7 @@ using Unity.VisualScripting;
 using UnityEditor.IMGUI.Controls;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
 
 public class wakeUp : MonoBehaviour
 {
@@ -67,12 +68,13 @@ public class wakeUp : MonoBehaviour
         if (collision.otherCollider)
         {
             anim.SetBool("headW", true);
+            StartCoroutine(changeScenes("Comic"));
         }
     }
-
-
-
-
-  
-
+    
+    IEnumerator changeScenes(string scene_name)
+    {
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene(scene_name);
+    }
 }
