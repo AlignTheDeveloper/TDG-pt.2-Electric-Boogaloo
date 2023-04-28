@@ -21,6 +21,10 @@ TagManager:
   - Rhombus
   - buttons
   - Corner
+  - leftPoint
+  - rightPoint
+  - rightPointT
+  - leftPointT
   layers:
   - Default
   - TransparentFX
