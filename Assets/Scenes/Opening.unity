@@ -184,7 +184,7 @@ SpriteRenderer:
   m_SortingLayerID: -1686632819
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: db7f398dbe3d94e4daf407aed42e242c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 123240087f47f44fc82626b4671e7d88, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -222,7 +222,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a34d4597f5b68584c9403a32094fd423, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawner: {fileID: 243474800}
+  sleepCount: 0
+  spriteRenderer: {fileID: 44533827}
+  sleepingTwo: {fileID: 21300000, guid: 0c7433da8610b4d479133d9c277fe72b, type: 3}
+  sleepingThree: {fileID: 21300000, guid: 0b75aea44b38c4d17a28e3bc817335a8, type: 3}
 --- !u!95 &44533831
 Animator:
   serializedVersion: 4
@@ -377,7 +380,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5.991903
+  orthographic size: 4.4745765
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
