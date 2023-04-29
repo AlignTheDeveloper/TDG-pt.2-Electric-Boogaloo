@@ -19,7 +19,7 @@ public class growTable : MonoBehaviour
     {
         if (isMaxSize == false)
         {
-            StartCoroutine(GrowTable());
+            Invoke("ExpansionTable", 3f);
         }
     }
     void Update()
@@ -28,6 +28,10 @@ public class growTable : MonoBehaviour
        
     }
 
+    void ExpansionTable()
+    {
+        StartCoroutine(GrowTable());
+    }
     private IEnumerator GrowTable()
     {
 

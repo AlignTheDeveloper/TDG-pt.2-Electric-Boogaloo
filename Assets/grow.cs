@@ -21,13 +21,18 @@ public class grow : MonoBehaviour
     {
         if (isMaxSize == false)
         {
-            StartCoroutine(Grow());
+            Invoke("Expansion", 1.5f);
         }
     }
     void Update()
     {
 
         Camera.main.fieldOfView = Mathf.Lerp(Camera.main.fieldOfView, TargetFOV, Speed * Time.deltaTime);
+    }
+
+    void Expansion()
+    {
+        StartCoroutine(Grow());
     }
 
     private IEnumerator Grow()
