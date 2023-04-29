@@ -4253,7 +4253,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6dd910f3d843749138c22d9015ed5ef3, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.7058824}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.8627451}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4605,7 +4605,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1580225739}
   m_Layer: 0
-  m_Name: Panel 11
+  m_Name: Panel 11 Walking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
