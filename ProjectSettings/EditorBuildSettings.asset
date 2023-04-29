@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Table_Expand.unity
     guid: 243af18be5911104597309764230b2fe
+  - enabled: 1
+    path: Assets/Scenes/Ending.unity
+    guid: 7926c142e5d30ba438992f93475fdc13
   m_configObjects: {}
