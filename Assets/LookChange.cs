@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TextingChange : MonoBehaviour
+public class LookChange : MonoBehaviour
 {
-    [SerializeField] GameObject response;
+    [SerializeField] GameObject lookNext;
     // Start is called before the first frame update
     void Start()
     {
-        response.SetActive(false);
+        lookNext.SetActive(false);
     }
 
     // Update is called once per frame
@@ -18,14 +18,13 @@ public class TextingChange : MonoBehaviour
         {
             Vector2 worldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             RaycastHit2D hit = Physics2D.Raycast(worldPoint, Vector2.zero);
-            int layerMask = LayerMask.GetMask("Text");
+            int layerMask = LayerMask.GetMask("Look");
             Collider2D target = Physics2D.OverlapPoint(worldPoint, layerMask);
 
             if (target)
             {
-                response.SetActive(true);
+                lookNext.SetActive(true);
             }
         }
     }
-
 }
