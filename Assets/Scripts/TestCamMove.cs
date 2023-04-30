@@ -11,14 +11,16 @@ public class TestCamMove : MonoBehaviour
     private float timer;
     //private Camera camera;
 
-    [SerializeField] private GameObject next;
-    [SerializeField] private GameObject back;
+    [SerializeField] GameObject next;
+    [SerializeField] GameObject back;
+    private bool coolRoom;
 
     void Start()
     {
         //camera = Camera.main;
         //next = GameObject.Find("Next");
         //back = GameObject.Find("Back");
+        coolRoom = true;
     }
 
     void Update()
@@ -34,8 +36,10 @@ public class TestCamMove : MonoBehaviour
         if (timer >= time)
         {
             DetectObjectWithRaycast();
-            next.SetActive(true);
-            back.SetActive(true);
+            if(coolRoom)
+            {
+                StartCoroutine(Reactivate());
+            }
         }
 
         //if (Input.mousePosition.x > Screen.width / 2f)
@@ -113,5 +117,12 @@ public class TestCamMove : MonoBehaviour
         {
             currentRoomIndex = 0;
         }
+    }
+
+    IEnumerator Reactivate()
+    {
+        yield return new WaitForSeconds(time);
+        next.SetActive(true);
+        back.SetActive(true);
     }
 }
