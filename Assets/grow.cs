@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class grow : MonoBehaviour
 {
@@ -49,6 +50,11 @@ public class grow : MonoBehaviour
             yield return null;
         }
         while (timer < growTime);
+
+        if (timer > growTime)
+        {
+            SceneManager.LoadScene("Comic3");
+        }
 
         isMaxSize = true;
     }
