@@ -2117,7 +2117,7 @@ GameObject:
   - component: {fileID: 576853502}
   - component: {fileID: 576853504}
   - component: {fileID: 576853503}
-  m_Layer: 5
+  m_Layer: 13
   m_Name: Back
   m_TagString: buttons
   m_Icon: {fileID: 0}
@@ -2132,8 +2132,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 576853501}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -500, y: -6.7673407, z: -2989.7314}
-  m_LocalScale: {x: 70.56179, y: 70.56179, z: 70.56179}
+  m_LocalPosition: {x: -777, y: -17.597, z: -2989.7314}
+  m_LocalScale: {x: 158.50294, y: 158.50294, z: 158.50294}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 839060523}
@@ -2152,7 +2152,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0029268265, y: -0.0029779673}
+  m_Offset: {x: 0.108581245, y: 0.100738525}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2163,7 +2163,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5412426, y: 3.644089}
+  m_Size: {x: 1.2687877, y: 8.1454525}
   m_EdgeRadius: 0
 --- !u!212 &576853504
 SpriteRenderer:
@@ -2203,8 +2203,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -686013203
-  m_SortingLayer: 5
+  m_SortingLayerID: 201833621
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a8b7dfea7969d4db5a477d0f9aac4b4f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3442,7 +3442,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.4083929, y: 0.6698455}
+  m_Offset: {x: 0.2748174, y: -3.8580632}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3453,7 +3453,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 7.374076, y: 4.132086}
+  m_Size: {x: 1.2811121, y: 1.8597736}
   m_EdgeRadius: 0
 --- !u!1 &723159307
 GameObject:
@@ -4082,7 +4082,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.21657178, y: -4.7417507}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4093,7 +4093,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 11.7, y: 12.51}
+  m_Size: {x: 1.5553889, y: 2.2058105}
   m_EdgeRadius: 0
 --- !u!210 &840556217
 SortingGroup:
@@ -5567,7 +5567,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1031024061}
   - component: {fileID: 1031024062}
-  - component: {fileID: 1031024063}
   m_Layer: 0
   m_Name: CameraTarget
   m_TagString: Untagged
@@ -5628,19 +5627,6 @@ MonoBehaviour:
   time: 5
   next: {fileID: 1746818773}
   back: {fileID: 576853501}
---- !u!114 &1031024063
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1031024059}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fc16d179e7cbae4ba5b17879c244afc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cam: {fileID: 0}
 --- !u!1 &1031805596
 GameObject:
   m_ObjectHideFlags: 0
@@ -6417,7 +6403,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.8060939, y: -3.5004802}
+  m_Offset: {x: 0.1436081, y: -3.900597}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -6428,7 +6414,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 11.342913, y: 2.6992235}
+  m_Size: {x: 1.2066479, y: 1.6756697}
   m_EdgeRadius: 0
 --- !u!1 &1207718921
 GameObject:
@@ -7781,7 +7767,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1540864301}
   m_Layer: 0
-  m_Name: Panel 18
+  m_Name: Panel 18 Milky
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8678,7 +8664,7 @@ GameObject:
   - component: {fileID: 1746818774}
   - component: {fileID: 1746818775}
   - component: {fileID: 1746818776}
-  m_Layer: 5
+  m_Layer: 13
   m_Name: Next
   m_TagString: buttons
   m_Icon: {fileID: 0}
@@ -8693,9 +8679,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1746818773}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 500, y: -46, z: -2989.7314}
-  m_LocalScale: {x: 69.931366, y: 69.931366, z: 69.931366}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 740, y: -131, z: -2989.7314}
+  m_LocalScale: {x: 158.5029, y: 158.5029, z: 158.5029}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 839060523}
   m_RootOrder: 1
@@ -8738,8 +8724,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -686013203
-  m_SortingLayer: 5
+  m_SortingLayerID: 201833621
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 994e0da459ffd4f21b6db94c9fc43c55, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -8765,7 +8751,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.28528458, y: 0.699139}
+  m_Offset: {x: -0.15042019, y: 0.8309412}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -8776,7 +8762,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.588832, y: 3.6484854}
+  m_Size: {x: 1.8233278, y: 8.078131}
   m_EdgeRadius: 0
 --- !u!1 &1752371101
 GameObject:
