@@ -280,28 +280,28 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Credits\n\nMade for GIMM 250\n_________________\n\nDevelopers\n_________________\n\nKate
-    Hillyard\n\nConnor Kindall\n\nSpencer Lott\n\nChad Mass\n\nGrant Olson\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n_________________\n\nMusic\n_________________\n\nChristian
+    Hillyard\n\nConnor Kindall\n\nSpencer Lott\n\nChad Maass\n\nGrant Olson\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n_________________\n\nMusic\n_________________\n\nChristian
     Gray \n\"Space Race\"\n\nGrant Olson \n\"Matchmaker\"\n\n\n\n\n\n\n\n\n\n\n\n\n\n_________________\n\nArt
     Assets\n_________________\n\nKate Hillyard\n- Final Panels -\n- Most Assets -\n\nConnor
-    Kindall\n- Space Background -\n\nSpencer Lott\n- Phone Panel -\n\nChad Mass\n-
+    Kindall\n- Space Background -\n\nSpencer Lott\n- Phone Panel -\n\nChad Maass\n-
     Title Screen -\n- Game Instructions -\n- Game Title -\n\nGrant Olson\n- Matching
     game assets -\n- Animations -\n\n\n\n\n\n\n\n\n\n\n\n\n\n_________________\n\nCinematography\n_________________\n\nChad
-    Mass\n- Camera System -\n\nGrant Olson\n- Rotoscope Animation -\n\n\n\n\n\n\n\n\n\n\n\n\n\n_________________\n\nInteraction
+    Maass\n- Camera System -\n\nGrant Olson\n- Rotoscope Animation -\n\n\n\n\n\n\n\n\n\n\n\n\n\n_________________\n\nInteraction
     Development\n_________________\n\nConnor Kindall\n- Waking Up Sequence -\n- Expanding
     Panel Sequence -\n- Button Interactions -\n\nSpencer Lott\n- Phone Interaction
-    -\n\nChad Mass\n- Camera Movement -\n- Button Interactions -\n\nGrant Olson\n-
+    -\n\nChad Maass\n- Camera Movement -\n- Button Interactions -\n\nGrant Olson\n-
     Walking Interaction -\n- Looking Interaction -\n- Final Panel Interaction -\n-
     Button Interactions -\n- Matching Game Sequence -\n- Scene Transitions -\n\n\n\n\n\n\n\n\n\n\n\n\n\n_________________\n\nStory
     Development\n_________________\n\nKate Hillyard\n- Storyboard Panels -\n\nConnor
     Kindall\n- Storyboard Panels -\n\nSpencer Lott\n- Storyboard Panels -\n\nChad
-    Mass\n- Storyboard Panels -\n\nGrant Olson\n- Storyboard Panels -\n- Script writing
-    -\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n_______________\n\n\"
+    Maass\n- Storyboard Panels -\n\nGrant Olson\n- Storyboard Panels -\n- Script
+    writing -\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n_______________\n\n\"
     As a child, I considered such unknowns sinister. Now, though, I understand they
     bear no ill will. The universe is, and we are.\" - Outer Wilds\n_______________\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThanks
     for playing!\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ba71b44ea62f0ae4b81ad8846bb2a49a, type: 2}
+  m_sharedMaterial: {fileID: -9043461759870021600, guid: ba71b44ea62f0ae4b81ad8846bb2a49a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -325,13 +325,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535

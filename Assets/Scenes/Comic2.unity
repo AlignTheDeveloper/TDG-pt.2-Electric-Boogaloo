@@ -1367,8 +1367,8 @@ MonoBehaviour:
   m_text: "I can't believe I finally found you! Do you have any idea how long I\u2019ve
     been waiting for this moment?"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ba71b44ea62f0ae4b81ad8846bb2a49a, type: 2}
+  m_sharedMaterial: {fileID: -9043461759870021600, guid: ba71b44ea62f0ae4b81ad8846bb2a49a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1398,7 +1398,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -6117,8 +6117,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: I bet you can't beat my high score on this one!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ba71b44ea62f0ae4b81ad8846bb2a49a, type: 2}
+  m_sharedMaterial: {fileID: -9043461759870021600, guid: ba71b44ea62f0ae4b81ad8846bb2a49a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6148,7 +6148,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -6586,8 +6586,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Wow this guy is so fun! I hope that bear is for me
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ba71b44ea62f0ae4b81ad8846bb2a49a, type: 2}
+  m_sharedMaterial: {fileID: -9043461759870021600, guid: ba71b44ea62f0ae4b81ad8846bb2a49a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6617,7 +6617,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -7158,8 +7158,8 @@ MonoBehaviour:
   m_text: What? This game must be busted. Guess I should probably let Hank know so
     he can fix it
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ba71b44ea62f0ae4b81ad8846bb2a49a, type: 2}
+  m_sharedMaterial: {fileID: -9043461759870021600, guid: ba71b44ea62f0ae4b81ad8846bb2a49a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7189,7 +7189,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -11081,8 +11081,8 @@ MonoBehaviour:
   m_text: Yeah I've waited just as long, but its too bad we are thousands of miles
     apart
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ba71b44ea62f0ae4b81ad8846bb2a49a, type: 2}
+  m_sharedMaterial: {fileID: -9043461759870021600, guid: ba71b44ea62f0ae4b81ad8846bb2a49a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -11112,7 +11112,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
