@@ -256,7 +256,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -1673}
+  m_AnchoredPosition: {x: 0, y: -2045}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &442234596
@@ -279,215 +279,26 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Credits
-
-
-    Made for GIMM 250
-
-    _________________
-
-
-    Developers
-
-    _________________
-
-
-    Kate
-    Hillyard
-
-
-    Connor Kindall
-
-
-    Spencer Lott
-
-
-    Chad Mass
-
-
-    Grant
-    Olson
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    _________________
-
-
-    Music
-
-    _________________
-
-
-    Kate''s
-    Boyfriend NEED TITLE
-
-
-    Grant Olson "Matchmaker"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    _________________
-
-
-    Art
-    Assets
-
-    _________________
-
-
-    Kate Hillyard
-
-    - Final Panels -
-
-    -
-    Most Assets -
-
-
-    Connor Kindall
-
-    - Space Background -
-
-    - Nebula -
-
-
-    Spencer
-    Lott
-
-    - Phone Panel -
-
-
-    Chad Mass
-
-    - Title Screen -
-
-    - Game Instructions
-    -
-
-    - Game Title -
-
-
-    Grant Olson
-
-    - Matching game animations -
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    _________________
-
-
-    Cinematography
-
-    _________________
-
-
-    Chad
-    Mass
-
-    - Camera System -
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    _________________
-
-
-    Interaction
-    Development
-
-    _________________
-
-
-    Connor Kindall
-
-    - Waking Sequence
-    -
-
-    - Expanding Panel -
-
-
-    Spencer Lott
-
-    - Phone Interaction -
-
-
-    Chad
-    Mass
-
-    - Camera Movement -
-
-
-    Grant Olson
-
-    - Matching Game -
-
-    -
-    Scene Transitions -
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    _______________
-
-
-    " As a child, I considered
-    such unknowns sinister. Now, though, I understand they bear no ill will. The
-    universe is, and we are." - Outer Wilds
-
-    _______________'
+  m_text: "Credits\n\nMade for GIMM 250\n_________________\n\nDevelopers\n_________________\n\nKate
+    Hillyard\n\nConnor Kindall\n\nSpencer Lott\n\nChad Mass\n\nGrant Olson\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n_________________\n\nMusic\n_________________\n\nChristian
+    Gray \n\"Space Race\"\n\nGrant Olson \n\"Matchmaker\"\n\n\n\n\n\n\n\n\n\n\n\n\n\n_________________\n\nArt
+    Assets\n_________________\n\nKate Hillyard\n- Final Panels -\n- Most Assets -\n\nConnor
+    Kindall\n- Space Background -\n\nSpencer Lott\n- Phone Panel -\n\nChad Mass\n-
+    Title Screen -\n- Game Instructions -\n- Game Title -\n\nGrant Olson\n- Matching
+    game assets -\n- Animations -\n\n\n\n\n\n\n\n\n\n\n\n\n\n_________________\n\nCinematography\n_________________\n\nChad
+    Mass\n- Camera System -\n\nGrant Olson\n- Rotoscope Animation -\n\n\n\n\n\n\n\n\n\n\n\n\n\n_________________\n\nInteraction
+    Development\n_________________\n\nConnor Kindall\n- Waking Up Sequence -\n- Expanding
+    Panel Sequence -\n- Button Interactions -\n\nSpencer Lott\n- Phone Interaction
+    -\n\nChad Mass\n- Camera Movement -\n- Button Interactions -\n\nGrant Olson\n-
+    Walking Interaction -\n- Looking Interaction -\n- Final Panel Interaction -\n-
+    Button Interactions -\n- Matching Game Sequence -\n- Scene Transitions -\n\n\n\n\n\n\n\n\n\n\n\n\n\n_________________\n\nStory
+    Development\n_________________\n\nKate Hillyard\n- Storyboard Panels -\n\nConnor
+    Kindall\n- Storyboard Panels -\n\nSpencer Lott\n- Storyboard Panels -\n\nChad
+    Mass\n- Storyboard Panels -\n\nGrant Olson\n- Storyboard Panels -\n- Script writing
+    -\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n_______________\n\n\"
+    As a child, I considered such unknowns sinister. Now, though, I understand they
+    bear no ill will. The universe is, and we are.\" - Outer Wilds\n_______________\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThanks
+    for playing!\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
@@ -748,7 +559,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 442234594}
-  speed: 85
+  speed: 125
 --- !u!82 &857604493
 AudioSource:
   m_ObjectHideFlags: 0
