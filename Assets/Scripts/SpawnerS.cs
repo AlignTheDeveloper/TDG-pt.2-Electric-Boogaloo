@@ -39,7 +39,7 @@ public class SpawnerS : MonoBehaviour
     void Start()
     {
         //starts the spawnning of electrons
-        InvokeRepeating("spawnObjects", 0f, 1f);
+        InvokeRepeating("spawnObjects", 0f, 2f);
 
    
 
