@@ -21,7 +21,8 @@ public class ScrollingText : MonoBehaviour
 
     void scrollDEEZ()
     {
-        text.transform.position = Vector2.up * speed;
+        float distanceToMove = speed * Time.deltaTime;
+        text.transform.Translate(Vector2.up * distanceToMove);
     }
-        
+
 }

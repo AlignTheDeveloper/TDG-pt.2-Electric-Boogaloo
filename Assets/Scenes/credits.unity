@@ -214,8 +214,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 214939036}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.15, y: 0.24, z: -0.36632845}
-  m_LocalScale: {x: 8.232251, y: 7.8154283, z: 1}
+  m_LocalPosition: {x: -5.6095, y: 0.0926, z: -0.36632845}
+  m_LocalScale: {x: 5.3134365, y: 8.11007, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -256,7 +256,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -358.5, y: -234.5}
+  m_AnchoredPosition: {x: 0, y: -288}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &442234596
@@ -279,34 +279,48 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'According to all known laws of aviation, there is no way a bee should
-    be able to fly. Its wings are too small to get its fat little body off the ground.
-    The bee, of course, flies anyway because bees don''t care what humans think is
-    impossible. Yellow, black. Yellow, black. Yellow, black. Yellow, black. Ooh,
-    black and yellow! Let''s shake it up a little. Barry! Breakfast is ready! Ooming!
-    Hang on a second. Hello? - Barry? - Adam? - Oan you believe this is happening?
-    - I can''t. I''ll pick you up. Looking sharp. Use the stairs. Your father paid
-    good money for those. Sorry. I''m excited. Here''s the graduate. We''re very
-    proud of you, son. A perfect report card, all B''s. Very proud. Ma! I got a thing
-    going here. - You got lint on your fuzz. - Ow! That''s me! - Wave to us! We''ll
-    be in row 118,000. - Bye! Barry, I told you, stop flying in the house! - Hey,
-    Adam. - Hey, Barry. - Is that fuzz gel? - A little. Special day, graduation.
-    Never thought I''d make it. Three days grade school, three days high school.
-    Those were awkward. Three days college. I''m glad I took a day and hitchhiked
-    around the hive. You did come back different. - Hi, Barry. - Artie, growing a
-    mustache? Looks good. - Hear about Frankie? - Yeah. - You going to the funeral?
-    - No, I''m not going. Everybody knows, sting someone, you die. Don''t waste it
-    on a squirrel. Such a hothead. I guess he could have just gotten out of the way.
-    I love this incorporating an amusement park into our day. That''s why we don''t
-    need vacations. Boy, quite a bit of pomp... under the circumstances. - Well,
-    Adam, today we are men. - We are! - Bee-men. - Amen! Hallelujah! Students, faculty,
-    distinguished bees, please welcome Dean Buzzwell. Welcome, New Hive Oity graduating
-    class of... ...9:15.
+  m_text: 'Credits
 
-'
+
+    Made for GIMM 250
+
+
+    Developed by
+
+
+    Kate Hillyard
+
+
+    Connor
+    Kindall
+
+
+    Spencer Lott
+
+
+    Chad Mass
+
+
+    Grant Olson
+
+
+    " As a child,
+    I considered such unknowns sinister. Now, though, I understand they bear no ill
+    will. The universe is, and we are. - Outer Wilds"
+
+
+
+
+
+
+
+
+
+    According to all
+    known laws of aviation...'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -314,13 +328,13 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
+  m_enableVertexGradient: 1
+  m_colorMode: 1
   m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+    topLeft: {r: 0.98823535, g: 0.7058824, b: 0.7058824, a: 1}
+    topRight: {r: 0.45098042, g: 0.93725497, b: 0.909804, a: 1}
+    bottomLeft: {r: 0.98823535, g: 0.7058824, b: 0.7058824, a: 1}
+    bottomRight: {r: 0.45098042, g: 0.93725497, b: 0.909804, a: 1}
   m_fontColorGradientPreset: {fileID: 0}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
@@ -337,7 +351,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -366,7 +380,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -43.657196, y: 271.9529, z: -114.60016, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -476,6 +490,7 @@ GameObject:
   - component: {fileID: 857604490}
   - component: {fileID: 857604489}
   - component: {fileID: 857604492}
+  - component: {fileID: 857604493}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -561,8 +576,104 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fd30e0b38d075743a453a4ccbdce983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 1778286630}
-  speed: 5
+  text: {fileID: 442234594}
+  speed: 25
+--- !u!82 &857604493
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857604488}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 7f0d499da59fa9745b3919b647be2a01, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.507
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 1091.2151
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1199888269
 GameObject:
   m_ObjectHideFlags: 0
@@ -654,8 +765,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1199888269}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.1701, y: 0.1817, z: -0.36632845}
-  m_LocalScale: {x: 8.232251, y: 7.8154283, z: 1}
+  m_LocalPosition: {x: 5.6296, y: 0.049, z: -0.36632845}
+  m_LocalScale: {x: 5.3130946, y: 8.081153, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -861,7 +972,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberToSpawn: 1
   spawnPool1:
-  - {fileID: 5899960223585845064, guid: cdb7e8d3f3817e94a9d1a61c58b9bac5, type: 3}
+  - {fileID: 2184872713030959922, guid: d79ecfbb1d3f7d94b912b24f128762c5, type: 3}
   spawnPool2:
   - {fileID: 7775197604848255900, guid: 0e0378e4c413e914fa98b38bc09ce624, type: 3}
   quadOne: {fileID: 214939036}
