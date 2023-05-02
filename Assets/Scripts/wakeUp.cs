@@ -50,13 +50,14 @@ public class wakeUp : MonoBehaviour
         else if (sleepCount == 2)
         {
             spriteRenderer.sprite = sleepingThree;
-            StartCoroutine(changeScenes("Comic"));
+            
         }
-        /*else if (sleepCount == 3)
+    
+        else if (sleepCount == 3)
         {
             StartCoroutine(changeScenes("Comic"));
         }
-        */
+        
     }
 
 
