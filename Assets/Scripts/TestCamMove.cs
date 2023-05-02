@@ -13,14 +13,18 @@ public class TestCamMove : MonoBehaviour
 
     [SerializeField] GameObject next;
     [SerializeField] GameObject back;
+    [SerializeField] GameObject theVoid;
     private bool coolRoom;
+    bool isChanging;
+    public float maxAlpha = 255;
 
-    void Start()
+    public void Start()
     {
         //camera = Camera.main;
         //next = GameObject.Find("Next");
         //back = GameObject.Find("Back");
         coolRoom = true;
+        theVoid.SetActive(false);
     }
 
     void Update()
@@ -66,6 +70,10 @@ public class TestCamMove : MonoBehaviour
         //        }
         //    }
         //}
+        if (currentRoomIndex == 18)
+        {
+            StartCoroutine(VoidTimer());
+        }
     }
 
     public void DetectObjectWithRaycast()
@@ -119,10 +127,48 @@ public class TestCamMove : MonoBehaviour
         }
     }
 
+     public void EnterTheVoid()
+    {
+        SpriteRenderer spriteRenderer = theVoid.GetComponent<SpriteRenderer>();
+        Color tmp = spriteRenderer.color;
+        float alpha = tmp.a;
+        alpha = 0;
+        theVoid.SetActive(true);
+        StartCoroutine(ChangeAlphaOverTime(spriteRenderer, maxAlpha, 2));
+    }
+
     IEnumerator Reactivate()
     {
         yield return new WaitForSeconds(time);
         next.SetActive(true);
         back.SetActive(true);
+    }
+
+    IEnumerator ChangeAlphaOverTime(SpriteRenderer spriteRenderer, float toAlpha, float duration)
+    {
+        if (isChanging)
+        {
+            yield break;
+        }
+        isChanging = true;
+
+        float counter = 0.0f;
+        float alphaMin = spriteRenderer.color.a;
+
+        while (counter < duration)
+        {
+            counter += Time.deltaTime;
+            float newAlpha = Mathf.Lerp(alphaMin, toAlpha / 255f, counter / duration);
+            spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, newAlpha);
+
+            yield return null;
+        }
+        spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, toAlpha);
+        isChanging = false;
+    }
+    IEnumerator VoidTimer()
+    {
+        yield return new WaitForSeconds(10);
+        EnterTheVoid();
     }
 }
