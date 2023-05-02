@@ -57,6 +57,11 @@ public class InstantiatePrefabs : MonoBehaviour
                 {
                     secondObjectClicked = hit.collider.gameObject;
 
+                    if(firstObjectClicked == secondObjectClicked)
+                    {
+                        firstObjectClicked = null;
+                        secondObjectClicked = null;
+                    }
                     if (firstObjectClicked.CompareTag(checkTag))
                     {
                         firstObjectClicked.SetActive(false);
