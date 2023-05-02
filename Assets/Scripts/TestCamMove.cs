@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TestCamMove : MonoBehaviour
 {
@@ -46,30 +47,6 @@ public class TestCamMove : MonoBehaviour
             }
         }
 
-        //if (Input.mousePosition.x > Screen.width / 2f)
-        //{
-        //    if (timer >= time)
-        //    {
-        //        if (Input.GetMouseButtonDown(0))
-        //        {
-        //            NextRoom();
-        //            Debug.Log("Next " + currentRoomIndex);
-        //            timer = 0;
-        //        }
-        //    }
-        //}
-        //else
-        //{
-        //    if (timer >= time)
-        //    {
-        //        if (Input.GetMouseButtonDown(0))
-        //        {
-        //            PreviousRoom();
-        //            Debug.Log("Back " + currentRoomIndex);
-        //            timer = 0;
-        //        }
-        //    }
-        //}
         if (currentRoomIndex == 18)
         {
             StartCoroutine(VoidTimer());
@@ -165,6 +142,7 @@ public class TestCamMove : MonoBehaviour
         }
         spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, toAlpha);
         isChanging = false;
+        SceneManager.LoadScene("Ending");
     }
     IEnumerator VoidTimer()
     {

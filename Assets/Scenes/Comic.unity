@@ -5795,6 +5795,8 @@ MonoBehaviour:
   time: 5
   next: {fileID: 1746818773}
   back: {fileID: 576853501}
+  theVoid: {fileID: 2090272847}
+  maxAlpha: 255
 --- !u!1 &1031805596
 GameObject:
   m_ObjectHideFlags: 0
