@@ -15,7 +15,6 @@ public class TestCamMove : MonoBehaviour
     [SerializeField] GameObject next;
     [SerializeField] GameObject back;
     [SerializeField] GameObject theVoid;
-    private bool coolRoom;
     bool isChanging;
     public float maxAlpha = 255;
 
@@ -24,7 +23,6 @@ public class TestCamMove : MonoBehaviour
         //camera = Camera.main;
         //next = GameObject.Find("Next");
         //back = GameObject.Find("Back");
-        coolRoom = true;
         theVoid.SetActive(false);
     }
 
@@ -41,10 +39,7 @@ public class TestCamMove : MonoBehaviour
         if (timer >= time)
         {
             DetectObjectWithRaycast();
-            if(coolRoom)
-            {
-                StartCoroutine(Reactivate());
-            }
+            StartCoroutine(Reactivate());
         }
 
         if (currentRoomIndex == 18)
