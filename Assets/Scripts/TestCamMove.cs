@@ -2,18 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class TestCamMove : MonoBehaviour
 {
     [SerializeField] private GameObject[] rooms;
     [SerializeField] private int currentRoomIndex = 0;
     [SerializeField] private float speed = 2f;
-    [SerializeField] private float time = 2f;
+
+    [SerializeField] private float timeToWait = 2f;
     private float timer;
     //private Camera camera;
 
-    [SerializeField] GameObject next;
-    [SerializeField] GameObject back;
+    [SerializeField] Button next;
+    [SerializeField] Button back;
     [SerializeField] GameObject theVoid;
     bool isChanging;
     public float maxAlpha = 255;
@@ -28,19 +30,19 @@ public class TestCamMove : MonoBehaviour
 
     void Update()
     {
-        timer += Time.deltaTime;
+        // timer += Time.deltaTime;
         transform.position = Vector2.MoveTowards(transform.position, rooms[currentRoomIndex].transform.position, Time.deltaTime * speed);
         
-        if(currentRoomIndex == 0)
-        {
-            timer = 999;
-        }
+        // if(currentRoomIndex == 0)
+        // {
+        //     timer = 999;
+        // }
 
-        if (timer >= time)
-        {
-            DetectObjectWithRaycast();
-            StartCoroutine(Reactivate());
-        }
+        // if (timer >= time)
+        // {
+        //     DetectObjectWithRaycast();
+        //     StartCoroutine(Reactivate());
+        // }
 
         if (currentRoomIndex == 18)
         {
@@ -48,46 +50,56 @@ public class TestCamMove : MonoBehaviour
         }
     }
 
-    public void DetectObjectWithRaycast()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            Vector2 worldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            RaycastHit2D hit = Physics2D.Raycast(worldPoint, Vector2.zero);
-            int layerMask = LayerMask.GetMask("ButtonLayer");
-            Collider2D target = Physics2D.OverlapPoint(worldPoint, layerMask);
+    // public void DetectObjectWithRaycast()
+    // {
+    //     if (Input.GetMouseButtonDown(0))
+    //     {
+    //         Vector2 worldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+    //         RaycastHit2D hit = Physics2D.Raycast(worldPoint, Vector2.zero);
+    //         int layerMask = LayerMask.GetMask("ButtonLayer");
+    //         Collider2D target = Physics2D.OverlapPoint(worldPoint, layerMask);
 
-            if (target)
-            {
+    //         if (target)
+    //         {
 
-                Debug.Log($"{hit.collider.name} Detected",
-                    hit.collider.gameObject);
-                if (hit.collider.name == "Next")
-                {
-                    NextRoom();
-                    timer = 0;
-                    next.SetActive(false);
-                    back.SetActive(false);
-                }
-                if (hit.collider.name == "Back")
-                {
-                    PreviousRoom();
-                    timer = 0;
-                    next.SetActive(false);
-                    back.SetActive(false);
-                }
+    //             Debug.Log($"{hit.collider.name} Detected",
+    //                 hit.collider.gameObject);
+    //             if (hit.collider.name == "Next")
+    //             {
+    //                 NextRoom();
+    //                 timer = 0;
+    //                 next.interactable = false;
+    //                 back.interactable = false;
+    //             }
+    //             if (hit.collider.name == "Back")
+    //             {
+    //                 PreviousRoom();
+    //                 timer = 0;
+    //                 next.interactable = false;
+    //                 back.interactable = false;
+    //             }
 
-            }
-        }
-    }
+    //         }
+    //     }
+    // }
 
     public void NextRoom()
-    {
+    { 
         currentRoomIndex++;
+        StartCoroutine(ChangingRoom());
         if (currentRoomIndex >= rooms.Length)
         {
             currentRoomIndex = 0;
         }
+    }
+
+    IEnumerator ChangingRoom()
+    {
+        next.interactable = false;
+        back.interactable = false;
+        yield return new WaitForSeconds(timeToWait);
+        next.interactable = true;
+        back.interactable = true;
     }
 
     public void PreviousRoom()
@@ -109,12 +121,12 @@ public class TestCamMove : MonoBehaviour
         StartCoroutine(ChangeAlphaOverTime(spriteRenderer, maxAlpha, 2));
     }
 
-    IEnumerator Reactivate()
-    {
-        yield return new WaitForSeconds(time);
-        next.SetActive(true);
-        back.SetActive(true);
-    }
+    // IEnumerator Reactivate()
+    // {
+    //     yield return new WaitForSeconds(time);
+    //     next.interactable = true;
+    //     back.interactable = true;
+    // }
 
     IEnumerator ChangeAlphaOverTime(SpriteRenderer spriteRenderer, float toAlpha, float duration)
     {
