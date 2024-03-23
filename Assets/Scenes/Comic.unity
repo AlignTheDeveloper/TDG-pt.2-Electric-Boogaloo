@@ -4410,6 +4410,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1817971084}
+  - {fileID: 1731797433}
   m_Father: {fileID: 1268696521}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6997,7 +6998,6 @@ Transform:
   - {fileID: 1207718922}
   - {fileID: 840556215}
   - {fileID: 1842002280}
-  - {fileID: 1731797433}
   m_Father: {fileID: 1553110324}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7555,9 +7555,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "That was rough bro, you were all confident trying to say soulmates don\u2019t
-    exist. lmao\nAnnnnyways, you tryna hit the arcade later? I heard someone broke
-    your record on Invaders From Space"
+  m_text: yeah, that was rough dude... Maybe a trip to the arcade later will bring
+    your spirits up?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -7584,8 +7583,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.2
-  m_fontSizeBase: 0.2
+  m_fontSize: 0.3
+  m_fontSizeBase: 0.3
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -7620,7 +7619,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 93.07753, y: 24.205105, z: 104.20893, w: 23.655891}
+  m_margin: {x: 93.07753, y: 24.205105, z: 104.20893, w: 23.131718}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -9118,12 +9117,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1731797432}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.8, y: -10.59, z: 0}
-  m_LocalScale: {x: 0.080759, y: 0.080759, z: 0.080759}
+  m_LocalPosition: {x: 0.10608919, y: -4.7437234, z: 0}
+  m_LocalScale: {x: 0.12239563, y: 0.12239563, z: 0.12239563}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1268696521}
-  m_RootOrder: 4
+  m_Father: {fileID: 840556215}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1731797434
 SpriteRenderer:
@@ -11055,7 +11054,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6.07, y: 1.83}
+  m_AnchoredPosition: {x: 6.04, y: 1.62}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1941104774

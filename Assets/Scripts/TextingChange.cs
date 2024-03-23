@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class TextingChange : MonoBehaviour
 {
+    public bool move = false;
     [SerializeField] GameObject response;
+    [SerializeField] GameObject pulse;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +26,9 @@ public class TextingChange : MonoBehaviour
 
             if (target)
             {
-                response.SetActive(true);
+               response.SetActive(!response.activeSelf);
+               move = true;    
+               pulse.SetActive(false);
             }
         }
     }
