@@ -5,7 +5,7 @@ using UnityEngine;
 public class TextingChange : MonoBehaviour
 {
     public bool move = false;
-    [SerializeField] GameObject response;
+    [SerializeField] public GameObject response;
     [SerializeField] GameObject pulse;
 
     // Start is called before the first frame update

@@ -2613,7 +2613,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c48adda86b46d194181e067c530c8d47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  move: 0
   response: {fileID: 1817971083}
+  pulse: {fileID: 0}
 --- !u!114 &618247230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5839,7 +5841,7 @@ MonoBehaviour:
   - {fileID: 0}
   currentRoomIndex: 18
   speed: 10
-  time: 5
+  timeToWait: 2
   next: {fileID: 0}
   back: {fileID: 0}
   theVoid: {fileID: 2090272847}

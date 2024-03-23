@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -7,11 +8,16 @@ using UnityEngine.UI;
 public class TestCamMove : MonoBehaviour
 {
     [SerializeField] private GameObject[] rooms;
-    [SerializeField] private int currentRoomIndex = 0;
+    [SerializeField] public int currentRoomIndex = 0;
     [SerializeField] private float speed = 2f;
 
     [SerializeField] private float timeToWait = 2f;
     private float timer;
+    private TextingChange textingChange;
+    private WalkingChange walkingChange;
+    private LookChange lookChange;
+
+
     //private Camera camera;
 
     [SerializeField] Button next;
@@ -22,6 +28,8 @@ public class TestCamMove : MonoBehaviour
 
     public void Start()
     {
+        textingChange = FindObjectOfType<TextingChange>();
+        walkingChange = FindObjectOfType<WalkingChange>();
         //camera = Camera.main;
         //next = GameObject.Find("Next");
         //back = GameObject.Find("Back");
@@ -48,6 +56,63 @@ public class TestCamMove : MonoBehaviour
         {
             StartCoroutine(VoidTimer());
         }
+
+        else if (currentRoomIndex == 9)
+        {
+            if (textingChange.move == false)
+            {
+                next.interactable = false;
+                back.interactable = false;
+            }
+            else
+            {
+                next.interactable = true;
+                back.interactable = true;
+            }
+        }
+        else if (currentRoomIndex == 10)
+        {
+            // if (walkingChange.move == false)
+            // {
+            //     next.interactable = false;
+            //     back.interactable = false;
+            // }
+            // else
+            // {
+            //     next.interactable = true;
+            //     back.interactable = true;
+        }
+        else if (currentRoomIndex == 12)
+        {
+            GameObject parentNext = next.transform.parent.gameObject;
+            GameObject parentBack = next.transform.parent.gameObject;
+
+            parentNext.SetActive(false);
+            parentBack.SetActive(false);
+        }
+        // else if (currentRoomIndex == 13)
+        // {
+        //     if (lookChange.move == false)
+        //     {
+        //         next.interactable = false;
+        //         back.interactable = false;
+        //     }
+        //     else
+        //     {
+        //         next.interactable = true;
+        //         back.interactable = true;
+            
+        //     }
+        // }
+        else if (currentRoomIndex == 17)
+        {
+            GameObject parentNext = next.transform.parent.gameObject;
+            GameObject parentBack = next.transform.parent.gameObject;
+
+            parentNext.SetActive(false);
+            parentBack.SetActive(false);
+        }
+        
     }
 
     // public void DetectObjectWithRaycast()
@@ -105,6 +170,7 @@ public class TestCamMove : MonoBehaviour
     public void PreviousRoom()
     {
         currentRoomIndex--;
+        StartCoroutine(ChangingRoom());
         if (currentRoomIndex <= 0)
         {
             currentRoomIndex = 0;
