@@ -5,6 +5,8 @@ using UnityEngine;
 public class WalkingChange : MonoBehaviour
 {
     [SerializeField] GameObject walkNext;
+    [SerializeField] GameObject pulse;
+    public bool move = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +25,9 @@ public class WalkingChange : MonoBehaviour
 
             if (target)
             {
-                walkNext.SetActive(true);
+                walkNext.SetActive(!walkNext.activeSelf);
+               move = true;    
+               pulse.SetActive(false);
             }
         }
     }

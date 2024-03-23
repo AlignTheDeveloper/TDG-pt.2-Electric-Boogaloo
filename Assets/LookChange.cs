@@ -5,6 +5,8 @@ using UnityEngine;
 public class LookChange : MonoBehaviour
 {
     [SerializeField] GameObject lookNext;
+    [SerializeField] GameObject pulse;
+    public bool move = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +25,9 @@ public class LookChange : MonoBehaviour
 
             if (target)
             {
-                lookNext.SetActive(true);
+                lookNext.SetActive(!lookNext.activeSelf);
+               move = true;    
+               pulse.SetActive(false);
             }
         }
     }

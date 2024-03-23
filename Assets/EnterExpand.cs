@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class EnterExpand : MonoBehaviour
 {
     [SerializeField] GameObject gameStarter;
+
     // Start is called before the first frame update
     void Start()
     {

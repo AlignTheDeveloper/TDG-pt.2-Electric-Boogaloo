@@ -2330,7 +2330,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 15, y: 15}
+    oldSize: {x: 0.56, y: 3.67}
     newSize: {x: 15, y: 15}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -2493,19 +2493,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4448933244690968, guid: 162c9bb2676c5440a9ed25a3b813a31e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.2749989
+      value: 0.5459278
       objectReference: {fileID: 0}
     - target: {fileID: 4448933244690968, guid: 162c9bb2676c5440a9ed25a3b813a31e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.25517052
+      value: 0.5261106
       objectReference: {fileID: 0}
     - target: {fileID: 4448933244690968, guid: 162c9bb2676c5440a9ed25a3b813a31e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 53.93
+      value: 54.03
       objectReference: {fileID: 0}
     - target: {fileID: 4448933244690968, guid: 162c9bb2676c5440a9ed25a3b813a31e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.96
+      value: -1.32
       objectReference: {fileID: 0}
     - target: {fileID: 4448933244690968, guid: 162c9bb2676c5440a9ed25a3b813a31e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2724,7 +2724,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c48adda86b46d194181e067c530c8d47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  move: 0
   response: {fileID: 1817971083}
+  pulse: {fileID: 0}
 --- !u!114 &618247230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2738,6 +2740,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lookNext: {fileID: 1360116292}
+  pulse: {fileID: 1439083028}
+  move: 0
 --- !u!114 &618247231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2751,6 +2755,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkNext: {fileID: 964982715}
+  pulse: {fileID: 0}
+  move: 0
 --- !u!114 &618247232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6052,7 +6058,7 @@ MonoBehaviour:
   - {fileID: 0}
   currentRoomIndex: 13
   speed: 10
-  time: 5
+  timeToWait: 2
   next: {fileID: 1746818773}
   back: {fileID: 576853501}
   theVoid: {fileID: 2090272847}
@@ -7634,6 +7640,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1437759283}
   m_CullTransparentMesh: 1
+--- !u!1 &1439083028 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1770230391938196, guid: 162c9bb2676c5440a9ed25a3b813a31e, type: 3}
+  m_PrefabInstance: {fileID: 587341522}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1441432908
 GameObject:
   m_ObjectHideFlags: 0
@@ -9279,7 +9290,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 15, y: 15}
+    oldSize: {x: 0.56, y: 3.69}
     newSize: {x: 15, y: 15}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
