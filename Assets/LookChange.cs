@@ -5,15 +5,21 @@ using UnityEngine;
 public class LookChange : MonoBehaviour
 {
     [SerializeField] GameObject lookNext;
+    [SerializeField] GameObject pulse;
+    public bool move = false;
+    private TestCamMove testCamMove;
     // Start is called before the first frame update
     void Start()
     {
         lookNext.SetActive(false);
+        testCamMove = FindObjectOfType<TestCamMove>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (testCamMove.currentRoomIndex == 13)
+        {
         if (Input.GetMouseButtonDown(0))
         {
             Vector2 worldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -23,8 +29,11 @@ public class LookChange : MonoBehaviour
 
             if (target)
             {
-                lookNext.SetActive(true);
+                lookNext.SetActive(!lookNext.activeSelf);
+               move = true;    
+               pulse.SetActive(false);
             }
+        }
         }
     }
 }

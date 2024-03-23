@@ -30,6 +30,7 @@ public class TestCamMove : MonoBehaviour
     {
         textingChange = FindObjectOfType<TextingChange>();
         walkingChange = FindObjectOfType<WalkingChange>();
+        lookChange = FindObjectOfType<LookChange>();
         //camera = Camera.main;
         //next = GameObject.Find("Next");
         //back = GameObject.Find("Back");
@@ -72,15 +73,16 @@ public class TestCamMove : MonoBehaviour
         }
         else if (currentRoomIndex == 10)
         {
-            // if (walkingChange.move == false)
-            // {
-            //     next.interactable = false;
-            //     back.interactable = false;
-            // }
-            // else
-            // {
-            //     next.interactable = true;
-            //     back.interactable = true;
+            if (walkingChange.move == false)
+            {
+                next.interactable = false;
+                back.interactable = false;
+            }
+            else
+            {
+                next.interactable = true;
+                back.interactable = true;
+            }
         }
         else if (currentRoomIndex == 12)
         {
@@ -90,20 +92,19 @@ public class TestCamMove : MonoBehaviour
             parentNext.SetActive(false);
             parentBack.SetActive(false);
         }
-        // else if (currentRoomIndex == 13)
-        // {
-        //     if (lookChange.move == false)
-        //     {
-        //         next.interactable = false;
-        //         back.interactable = false;
-        //     }
-        //     else
-        //     {
-        //         next.interactable = true;
-        //         back.interactable = true;
-            
-        //     }
-        // }
+        else if (currentRoomIndex == 13)
+        {
+            if (lookChange.move == false)
+            {
+                next.interactable = false;
+                back.interactable = false;
+            }
+            else
+            {
+                next.interactable = true;
+                back.interactable = true;
+            }
+        }
         else if (currentRoomIndex == 17)
         {
             GameObject parentNext = next.transform.parent.gameObject;

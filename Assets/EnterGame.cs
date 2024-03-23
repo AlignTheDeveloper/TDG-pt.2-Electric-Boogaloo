@@ -6,15 +6,18 @@ using UnityEngine.SceneManagement;
 public class EnterGame : MonoBehaviour
 {
     [SerializeField] GameObject gameStarter;
+    private TestCamMove testCamMove;
     // Start is called before the first frame update
     void Start()
     {
-        
+        testCamMove = FindObjectOfType<TestCamMove>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (testCamMove.currentRoomIndex == 12)
+        {
         if (Input.GetMouseButtonDown(0))
         {
             Vector2 worldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -26,6 +29,7 @@ public class EnterGame : MonoBehaviour
             {
                 SceneManager.LoadScene("Game_Matching");
             }
+        }
         }
     }
 }
